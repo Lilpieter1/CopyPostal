@@ -1,0 +1,38 @@
+.dutch-postal-code {
+  position: relative;
+  background-color: rgba(255, 235, 59, 0.3);
+  border-radius: 2px;
+  padding: 0 2px;
+  margin: 0 1px;
+  display: inline-block;
+}
+
+.copy-postal-code {
+  position: absolute;
+  top: -18px;
+  right: -5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dutch-postal-code:hover .copy-postal-code {
+  opacity: 1;
+}
+
+.copy-postal-code.copied {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+} 
